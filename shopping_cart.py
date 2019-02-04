@@ -30,7 +30,6 @@ products = [
     {"id":19, "name": "Gluten Free Quinoa Three Cheese & Mushroom Blend", "department": "dry goods pasta", "aisle": "grains rice dried goods", "price": 3.99},
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
-
 # TODO: write some Python code here to produce the desired functionality...
 print(products)
 
@@ -38,3 +37,10 @@ print(products)
 
 print(products[0])
 print(products[8])
+
+
+#code to make sure only "Name" can be printed out
+
+
+for p in products:
+    print(p["name"])
