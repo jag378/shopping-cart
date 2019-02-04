@@ -45,5 +45,10 @@ print(products[8])
 for p in products:
     print(p["name"])
 
-user_product = input("Please input your product's number")
+user_product = int(input("Please input your product's number"))
 print(user_product)
+
+
+while user_product < 3:
+    print(user_product)
+    user_product=int(input("Please input your product's number"))
