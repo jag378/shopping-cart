@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Feb  4 12:58:57 2019
+Spyder Editor
 
-@author: jag378
+This is a temporary script file.
 """
 
 #Setup project repository
@@ -44,3 +44,6 @@ print(products[8])
 
 for p in products:
     print(p["name"])
+
+user_product = input("Please input your product's number")
+print(user_product)
