@@ -45,8 +45,16 @@ print(products[8])
 for p in products:
     print(p["name"])
 
+#creating place to store all products purchased
+
+total_products = []
+
+user_product = []
 
 while user_product != "DONE":
     user_product = input("Please input your product's number: ")
     print(user_product)
-    
+    if user_product != "DONE":
+        total_products.append(user_product)
+
+print(total_products)    
