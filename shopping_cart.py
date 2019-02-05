@@ -37,6 +37,8 @@ print(products)
 
 #code to make sure individual products are printing correctly
 
+pre_tax = 0
+pre_tax_dollar=0
 print(products[0])
 print(products[8])
 
@@ -77,10 +79,12 @@ print("******************")
 
 #Printing Product List
 
-pre_tax = 0
+
 
 def dollar_format(prices):
     return "${0:,.2f}".format(prices)
+
+print("Your purchases: ")
 
 for user_product in total_products:
     product_lookups = [p for p in products if str(p["id"]) == str(user_product)]
@@ -91,7 +95,7 @@ for user_product in total_products:
     pre_tax_dollar = dollar_format(pre_tax)
 
 print("******************")
-print("Pre-tax price: " + str(pre_tax_dollar))
+print("PRE-TAX PRICE: " + str(pre_tax_dollar))
 
 
 #Tax Calculation
@@ -99,10 +103,15 @@ tax_rate = 0.06
 tax_amount = pre_tax * tax_rate
 tax_amount_formatted = dollar_format(tax_amount)
 
-print("Tax: " + str(tax_amount_formatted))
+print("TAX: " + str(tax_amount_formatted))
 print("******************")
 
 #Total Cost Calculation
 total_cost = pre_tax + tax_amount
 total_cost_formatted = dollar_format(total_cost)
-print("Total Price: " + str(total_cost_formatted))
+print("TOTAL PRICE: " + str(total_cost_formatted))
+print("******************")
+
+print("THANK YOU FOR SHOPPING WITH US. WE'LL SEE YOU NEXT TIME!")
+
+product_lookup[0] = 0
