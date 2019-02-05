@@ -4,6 +4,6 @@ James Gleason
 
 Shopping Cart Project
 
-final project with all revisions history is saved as shopping-cart.py
+final project with all revisions history is saved as shopping_cart.py
 
 
