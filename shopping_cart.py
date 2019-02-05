@@ -33,21 +33,12 @@ products = [
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 # TODO: write some Python code here to produce the desired functionality...
-print(products)
 
 #code to make sure individual products are printing correctly
 
 pre_tax = 0
 pre_tax_dollar=0
-print(products[0])
-print(products[8])
 
-
-#code to make sure only "Name" can be printed out
-
-
-for p in products:
-    print(p["name"])
 
 #creating place to store all products purchased
 
@@ -67,18 +58,17 @@ while user_product != "DONE":
         else:
             print("Sorry! That is not a real product number. Please input a new number!")
 
-print(total_products)
 
 #Grocery Store Header and Time
+print("\n")
 print("******************")
 print("Gleason's Grocery")
 print("Call us at (610)867-5309")
-print("Date & Time of Checkout Start: " + str(now))
+print("Time of Checkout Start: " + str(now))
 print("******************")
 
 
 #Printing Product List
-
 
 
 def dollar_format(prices):
