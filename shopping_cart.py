@@ -90,3 +90,7 @@ tax_amount_formatted = dollar_format(tax_amount)
 print("Tax: " + str(tax_amount_formatted))
 print("******************")
 
+#Total Cost Calculation
+total_cost = pre_tax + tax_amount
+total_cost_formatted = dollar_format(total_cost)
+print("Total Price: " + str(total_cost_formatted))
