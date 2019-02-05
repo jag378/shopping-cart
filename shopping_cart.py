@@ -8,6 +8,8 @@ This is a temporary script file.
 #Setup project repository
 #test2
 
+import datetime
+
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
     {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": 4.99},
@@ -53,7 +55,7 @@ total_products = []
 
 user_product = []
 
-
+now = datetime.datetime.now()
 
 while user_product != "DONE":
     user_product = (input("Please input your product's number: "))
@@ -66,9 +68,11 @@ while user_product != "DONE":
 print(total_products)
 
 #Grocery Store Header and Time
+print("******************")
 print("Gleason's Grocery")
 print("Call us at (610)867-5309")
-
+print("Date & Time of Checkout Start: " + str(now))
+print("******************")
 
 
 #Printing Product List
