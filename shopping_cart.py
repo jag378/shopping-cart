@@ -63,8 +63,9 @@ while user_product != "DONE":
 print("\n")
 print("******************")
 print("Gleason's Grocery")
+print("3700 O Street NW")
 print("Call us at (610)867-5309")
-print("Time of Checkout Start: " + str(now))
+print("Time of Checkout Start: " + str(now.strftime("%m/%d/%Y %I:%M %p")))
 print("******************")
 
 
