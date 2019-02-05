@@ -49,6 +49,8 @@ for p in products:
 
 total_products = []
 
+#User Product Inputs
+
 user_product = []
 
 while user_product != "DONE":
@@ -60,6 +62,8 @@ while user_product != "DONE":
             print("Sorry! That is not a real product number. Please input a new number!")
 
 print(total_products)
+
+#Printing Product List
 
 pre_tax = 0
 
@@ -76,3 +80,13 @@ for user_product in total_products:
 
 print("******************")
 print("Pre-tax price: " + str(pre_tax_dollar))
+
+
+#Tax Calculation
+tax_rate = 0.06
+tax_amount = pre_tax * tax_rate
+tax_amount_formatted = dollar_format(tax_amount)
+
+print("Tax: " + str(tax_amount_formatted))
+print("******************")
+
