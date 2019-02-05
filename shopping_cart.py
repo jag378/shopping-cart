@@ -54,9 +54,14 @@ user_product = []
 while user_product != "DONE":
     user_product = (input("Please input your product's number: "))
     if user_product != "DONE":
-        total_products.append(user_product)
+        if int(user_product) <=21:
+            total_products.append(user_product)
+        else:
+            print("Sorry! That is not a real product number. Please input a new number!")
 
 print(total_products)
+
+pre_tax = 0
 
 for user_product in total_products:
     product_lookups = [p for p in products if str(p["id"]) == str(user_product)]
@@ -65,6 +70,6 @@ for user_product in total_products:
     pre_tax = pre_tax + product_lookup["price"]
 
 print("******************")
-print(pre_tax)
+print("Pre-tax price: " + str(pre_tax))
     
     
