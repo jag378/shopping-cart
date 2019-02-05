@@ -53,6 +53,8 @@ total_products = []
 
 user_product = []
 
+
+
 while user_product != "DONE":
     user_product = (input("Please input your product's number: "))
     if user_product != "DONE":
@@ -62,6 +64,12 @@ while user_product != "DONE":
             print("Sorry! That is not a real product number. Please input a new number!")
 
 print(total_products)
+
+#Grocery Store Header and Time
+print("Gleason's Grocery")
+print("Call us at (610)867-5309")
+
+
 
 #Printing Product List
 
