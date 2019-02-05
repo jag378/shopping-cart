@@ -60,5 +60,9 @@ while user_product != "DONE":
 print(total_products)
 
 for user_product in total_products:
-    print(user_product)
+    product_lookups = [p for p in products if str(p["id"]) == str(user_product)]
+    print(product_lookups)
+    product_lookup = product_lookups[0]
+    print(product_lookup["name"])
+    
     
