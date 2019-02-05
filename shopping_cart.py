@@ -53,7 +53,6 @@ user_product = []
 
 while user_product != "DONE":
     user_product = (input("Please input your product's number: "))
-    print(user_product)
     if user_product != "DONE":
         total_products.append(user_product)
 
@@ -61,7 +60,6 @@ print(total_products)
 
 for user_product in total_products:
     product_lookups = [p for p in products if str(p["id"]) == str(user_product)]
-    print(product_lookups)
     product_lookup = product_lookups[0]
     print(product_lookup["name"])
     
