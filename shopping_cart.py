@@ -70,9 +70,9 @@ for user_product in total_products:
     product_lookups = [p for p in products if str(p["id"]) == str(user_product)]
     product_lookup = product_lookups[0]
     print(str(product_lookup["name"]) + ":  " + str(dollar_format(product_lookup["price"])))
+   
     pre_tax = pre_tax + product_lookup["price"]
+    pre_tax_dollar = dollar_format(pre_tax)
 
 print("******************")
-print("Pre-tax price: " + str(pre_tax))
-    
-    
+print("Pre-tax price: " + str(pre_tax_dollar))
