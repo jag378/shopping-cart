@@ -61,9 +61,10 @@ print(total_products)
 for user_product in total_products:
     product_lookups = [p for p in products if str(p["id"]) == str(user_product)]
     product_lookup = product_lookups[0]
-    print(product_lookup["name"])
+    print(str(product_lookup["name"]) + ":  " + str(product_lookup["price"]))
     pre_tax = pre_tax + product_lookup["price"]
 
+print("******************")
 print(pre_tax)
     
     
